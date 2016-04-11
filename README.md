@@ -1,9 +1,9 @@
 # LayoutFormatter
 
-Reformat your Android layout XML files.
+Retrofit your Android layout XML files.
 
-It will adjust your attributes order, and in accordance with the rules,
-it will put some attributes in the front row, and take some attributes at the end of the row.
+It will adjust your attributes order in accordance with the rules,
+and it will adjust some attributes to the front, and take some attributes at the end of the rows.
 It will make your code format more nice.
 
 It is open source. <a href="https://github.com/drakeet/LayoutFormatter">https://github.com/drakeet/LayoutFormatter</a>
