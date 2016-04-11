@@ -7,6 +7,7 @@ it will put some attributes in the front row, and take some attributes at the en
 It will make your code format more nice.
 
 It is open source. <a href="https://github.com/drakeet/LayoutFormatter">https://github.com/drakeet/LayoutFormatter</a>
+
 ![](https://raw.githubusercontent.com/drakeet/LayoutFormatter/master/sample.png)
 
 ### Obtaining
