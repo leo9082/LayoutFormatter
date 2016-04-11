@@ -127,7 +127,7 @@ public class Formatter {
         String result = "";
         for (String line : lines) {
             System.out.println(line);
-            result += line + "\n";
+            result += line + System.getProperty("line.separator");
         }
 
         return result;
