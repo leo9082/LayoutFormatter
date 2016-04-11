@@ -16,17 +16,17 @@ class Formatter {
     private static HashMap<String, Integer> sRule = new HashMap<String, Integer>();
 
 
-    public static int getPriority() {
+    private static int getPriority() {
         return priority;
     }
 
 
-    public static int getNextPriority() {
+    private static int getNextPriority() {
         return ++priority;
     }
 
 
-    public static int getMaxNextPriority() {
+    private static int getMaxNextPriority() {
         return ++maxPriority;
     }
 
@@ -79,21 +79,6 @@ class Formatter {
     }
 
 
-    private static String android(String name) {
-        return String.format("android:%s", name);
-    }
-
-
-    private static String app(String name) {
-        return String.format("app:%s", name);
-    }
-
-
-    private static String tools(String name) {
-        return String.format("tools:%s", name);
-    }
-
-
     private static int getLinePriority(String line) {
         try {
             return sRule.get(line.trim().split("=")[0]);
@@ -103,9 +88,18 @@ class Formatter {
     }
 
 
+    static String retrofit(String xml) {
+        return xml.replaceAll("\" >", "\"" + lineSeparator() + ">")
+                  .replaceAll("\">", "\"" + lineSeparator() + ">")
+                  .replaceAll("\" />", "\"" + lineSeparator() + "/>")
+                  .replaceAll("\"/>", "\"" + lineSeparator() + "/>");
+    }
+
+
     // TODO: 16/4/11 Need to support the multi-lines strings
-    public static String apply(String xml) {
-        String[] _lines = xml.split(System.getProperty("line.separator"));
+    static String apply(String xml) {
+        xml = retrofit(xml);
+        String[] _lines = xml.split(lineSeparator());
         List<String> attrs = Arrays.asList(_lines);
         int start = 0, end;
         boolean skip = false;
@@ -127,7 +121,7 @@ class Formatter {
         String result = "";
         for (String line : attrs) {
             System.out.println(line);
-            result += line + System.getProperty("line.separator");
+            result += line + lineSeparator();
         }
 
         return result;
@@ -149,5 +143,25 @@ class Formatter {
                 }
             }
         }
+    }
+
+
+    private static String android(String name) {
+        return String.format("android:%s", name);
+    }
+
+
+    private static String app(String name) {
+        return String.format("app:%s", name);
+    }
+
+
+    private static String tools(String name) {
+        return String.format("tools:%s", name);
+    }
+
+
+    private static String lineSeparator() {
+        return System.getProperty("line.separator");
     }
 }

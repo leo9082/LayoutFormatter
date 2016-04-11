@@ -2,6 +2,7 @@ package me.drakeet.layoutformatter;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
+import com.intellij.openapi.actionSystem.IdeActions;
 import com.intellij.openapi.actionSystem.LangDataKeys;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import com.intellij.openapi.application.ApplicationManager;
@@ -20,14 +21,17 @@ public class LayoutFormatterAction extends AnAction {
     }
 
 
-    public void actionPerformed(AnActionEvent event) {
-        Project project = event.getData(PlatformDataKeys.PROJECT);
+    public void actionPerformed(final AnActionEvent event) {
+        final Project project = event.getData(PlatformDataKeys.PROJECT);
         if (event.getData(LangDataKeys.EDITOR) != null) {
             final Document document = event.getData(LangDataKeys.EDITOR).getDocument();
             ApplicationManager.getApplication().runWriteAction(new Runnable() {
                 @Override public void run() {
                     String txt = document.getText();
                     document.setText(Formatter.apply(txt));
+                    event.getActionManager()
+                         .getAction(IdeActions.ACTION_EDITOR_REFORMAT)
+                         .actionPerformed(event);
                 }
             });
         } else {
