@@ -107,6 +107,7 @@ class Formatter {
             String attr = attrs.get(i).trim();
             if (!attr.startsWith("</") && attr.startsWith("<")) {
                 start = i;
+                skip = false;
             } else if (attr.startsWith("</")) {
                 skip = true;
             } else if (attr.endsWith(">")) {

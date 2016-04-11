@@ -1,7 +1,7 @@
 <idea-plugin version="2">
     <id>me.drakeet.layoutformatter</id>
     <name>LayoutFormatter</name>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <vendor email="drakeet.me@gmail.com" url="https://drakeet.me">drakeet</vendor>
 
     <description><![CDATA[
@@ -16,7 +16,7 @@
     ]]></description>
 
     <change-notes><![CDATA[
-      v0.9
+      v1.0.1
     ]]>
     </change-notes>
 
