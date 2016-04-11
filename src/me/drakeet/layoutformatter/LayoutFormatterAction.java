@@ -27,7 +27,7 @@ public class LayoutFormatterAction extends AnAction {
             ApplicationManager.getApplication().runWriteAction(new Runnable() {
                 @Override public void run() {
                     String txt = document.getText();
-                    document.setText("---hehe---\n" + txt);
+                    document.setText(Formatter.apply(txt));
                 }
             });
         } else {

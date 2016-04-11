@@ -1,0 +1,40 @@
+<idea-plugin version="2">
+    <id>me.drakeet.layoutformatter</id>
+    <name>LayoutFormatter</name>
+    <version>1.0</version>
+    <vendor email="drakeet.me@gmail.com" url="https://drakeet.me">drakeet</vendor>
+
+    <description><![CDATA[
+      Reformat your Android layout XML files.
+    ]]></description>
+
+    <change-notes><![CDATA[
+      Initial.
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="131"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <defaultProjectTypeProvider type="Android"/>
+    </extensions>
+
+    <!--<actions>-->
+
+    <actions>
+        <group id="DrakeetPlugin.LayoutFormatterAction" text="_Formatter" description="Formatter">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="DrakeetPlugin.Textboxes"
+                class="me.drakeet.layoutformatter.LayoutFormatterAction" text="Layout _Formatter"
+                description="Reformat your Android layout XML files."/>
+        </group>
+    </actions>
+
+</idea-plugin>
