@@ -12,7 +12,7 @@ It is open source. <a href="https://github.com/drakeet/LayoutFormatter">https://
 
 ### Q&A
 
-Q: By the way, did you know that Android XML files formatting can be customized in Settings -> Editor -> Code Style -> XML -> Android?
+Q: Did you know that Android XML files formatting can be customized in Settings -> Editor -> Code Style -> XML -> Android?
 
 A: I know that Android Studio has XML formatting features, but it does not do well, it can not adjust the order of attributes, such as `android:id` can not automatically adjust to the first position.
 
