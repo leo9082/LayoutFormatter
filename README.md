@@ -28,3 +28,8 @@ Or you can download the jar file from [releases](https://github.com/drakeet/Layo
 
 `Preferences -> Plugin -> Install plugin from disk...`
 
+### How to use
+
+![](https://raw.githubusercontent.com/drakeet/LayoutFormatter/master/art/hu.png)
+
+
