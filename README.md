@@ -10,6 +10,11 @@ It is open source. <a href="https://github.com/drakeet/LayoutFormatter">https://
 
 ![](http://ww4.sinaimg.cn/large/86e2ff85gw1f2t2d40we4j21ge0m5gz1.jpg)
 
+### Deprecated!
+
+This project is deprecated in favor of the Android Studio has the same and better XML formatter:  
+`Editor -> Code Style -> XML -> Arrangement`
+
 ### Q&A
 
 Q: Did you know that Android XML files formatting can be customized in Settings -> Editor -> Code Style -> XML -> Android?
