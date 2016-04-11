@@ -17,7 +17,6 @@ public class LayoutFormatterAction extends AnAction {
     public LayoutFormatterAction() {
         // Set the menu item name.
         super("Layout _Formatter _Action");
-        // Set the menu item name, description and icon.
     }
 
 
