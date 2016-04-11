@@ -15,12 +15,6 @@ It is open source. <a href="https://github.com/drakeet/LayoutFormatter">https://
 This project is deprecated in favor of the Android Studio has the same and better XML formatter:  
 `Editor -> Code Style -> XML -> Arrangement`
 
-### Q&A
-
-Q: Did you know that Android XML files formatting can be customized in Settings -> Editor -> Code Style -> XML -> Android?
-
-A: I know that Android Studio has XML formatting features, but it does not do well, it can not adjust the order of attributes, such as `android:id` can not automatically adjust to the first position.
-
 ### Obtaining
 
 The plugin is distributed through the Plugin Manager in IntelliJ. https://plugins.jetbrains.com/plugin/8299
