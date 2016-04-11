@@ -6,10 +6,17 @@
 
     <description><![CDATA[
       Reformat your Android layout XML files.
+      <br><br>
+      It will adjust your attributes order, and in accordance with the rules,
+      it will put some attributes in the front row, and take some attributes at the end of the row.
+      <br><br>
+      It will make your code format more nice.
+
+      It is open source. <a href="https://github.com/drakeet/LayoutFormatter">https://github.com/drakeet/LayoutFormatter</a>
     ]]></description>
 
     <change-notes><![CDATA[
-      Initial.
+      v0.9
     ]]>
     </change-notes>
 
