@@ -8,7 +8,7 @@ import java.util.List;
  * Created by drakeet(http://drakeet.me)
  * Date: 16/4/10 15:01
  */
-public class Formatter {
+class Formatter {
 
     private static int priority = 0;
     private static final int MAX_PRIORITY = Integer.MAX_VALUE / 2;
@@ -106,26 +106,26 @@ public class Formatter {
     // TODO: 16/4/11 Need to support the multi-lines strings
     public static String apply(String xml) {
         String[] _lines = xml.split(System.getProperty("line.separator"));
-        List<String> lines = Arrays.asList(_lines);
+        List<String> attrs = Arrays.asList(_lines);
         int start = 0, end;
         boolean skip = false;
-        for (int i = 0; i < lines.size(); i++) {
-            String line = lines.get(i).trim();
-            if (!line.startsWith("</") && line.startsWith("<")) {
+        for (int i = 0; i < attrs.size(); i++) {
+            String attr = attrs.get(i).trim();
+            if (!attr.startsWith("</") && attr.startsWith("<")) {
                 start = i;
-            } else if (line.startsWith("</")) {
+            } else if (attr.startsWith("</")) {
                 skip = true;
-            } else if (line.endsWith(">")) {
+            } else if (attr.endsWith(">")) {
                 if (!skip) {
                     end = i;
-                    reformat(lines, start + 1, end);
+                    reformat(attrs, start + 1, end);
                 } else {
                     skip = false;
                 }
             }
         }
         String result = "";
-        for (String line : lines) {
+        for (String line : attrs) {
             System.out.println(line);
             result += line + System.getProperty("line.separator");
         }
