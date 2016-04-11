@@ -8,7 +8,7 @@ It will make your code format more nice.
 
 It is open source. <a href="https://github.com/drakeet/LayoutFormatter">https://github.com/drakeet/LayoutFormatter</a>
 
-![](https://raw.githubusercontent.com/drakeet/LayoutFormatter/master/art/nbf.png) ![](https://raw.githubusercontent.com/drakeet/LayoutFormatter/master/art/naf.png)
+![](http://ww4.sinaimg.cn/large/86e2ff85gw1f2t2d40we4j21ge0m5gz1.jpg)
 
 ### Q&A
 
