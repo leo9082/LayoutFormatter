@@ -12,9 +12,9 @@ It is open source. <a href="https://github.com/drakeet/LayoutFormatter">https://
 
 ### Obtaining
 
-The plugin is distributed through the Plugin Manager in IntelliJ.
+The plugin is distributed through the Plugin Manager in IntelliJ. https://plugins.jetbrains.com/plugin/8299
 
-Or you can download the jar from https://plugins.jetbrains.com/plugin/8299
+Or you can download the jar file from [releases](https://github.com/drakeet/LayoutFormatter/releases).
 
 ### Install
 
