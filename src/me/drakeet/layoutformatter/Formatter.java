@@ -101,8 +101,8 @@ class Formatter {
                   .replaceAll("\">", "\"" + lineSeparator() + ">")
                   .replaceAll("\" />", "\"" + lineSeparator() + "/>")
                   .replaceAll("\"/>", "\"" + lineSeparator() + "/>")
-                  .replaceAll("fill_parent", "match_parent")
-                  .replaceAll("dip", "dp");
+                  .replaceAll("\"fill_parent\"", "\"match_parent\"")
+                  .replaceAll("\"dip\"", "\"dp\"");
     }
 
 

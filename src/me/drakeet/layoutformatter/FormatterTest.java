@@ -11,6 +11,7 @@ public class FormatterTest extends TestCase {
     private String xml2;
     private String xml3;
     private String xml4;
+    private String xml5;
 
 
     @Override protected void setUp() throws Exception {
@@ -19,6 +20,7 @@ public class FormatterTest extends TestCase {
         xml2 = "<Test android:text=\"123\"\nandroid:id=\"456\" />";
         xml3 = "<Test android:text=\"123\"\nandroid:id=\"456\">";
         xml4 = "<Test android:text=\"123\"\nandroid:id=\"456\" >";
+        xml5 = "<XXX android:layout_height=\"fill_parent\" string=\"fill_parent should be written to match_parent\"/>";
     }
 
 
@@ -27,13 +29,17 @@ public class FormatterTest extends TestCase {
         xml2 = Formatter.retrofit(xml2);
         xml3 = Formatter.retrofit(xml3);
         xml4 = Formatter.retrofit(xml4);
+        xml5 = Formatter.retrofit(xml5);
         System.out.println(xml1);
         System.out.println(xml2);
         System.out.println(xml3);
         System.out.println(xml4);
+        System.out.println(xml5);
         assertEquals(xml1, "<Test android:text=\"123\"\nandroid:id=\"456\"\n/>");
         assertEquals(xml2, "<Test android:text=\"123\"\nandroid:id=\"456\"\n/>");
         assertEquals(xml3, "<Test android:text=\"123\"\nandroid:id=\"456\"\n>");
         assertEquals(xml4, "<Test android:text=\"123\"\nandroid:id=\"456\"\n>");
+        assertEquals(xml5, "<XXX android:layout_height=\"match_parent\" " +
+                "string=\"fill_parent should be written to match_parent\"\n/>");
     }
 }
