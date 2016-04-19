@@ -97,12 +97,20 @@ class Formatter {
 
 
     static String retrofit(String xml) {
-        return xml.replaceAll("\" >", "\"" + lineSeparator() + ">")
-                  .replaceAll("\">", "\"" + lineSeparator() + ">")
-                  .replaceAll("\" />", "\"" + lineSeparator() + "/>")
-                  .replaceAll("\"/>", "\"" + lineSeparator() + "/>")
+        // @formatter:off
+        return xml.replaceAll("\" >"           , "\"" + lineSeparator() + ">")
+                  .replaceAll("\">"            , "\"" + lineSeparator() + ">")
+                  .replaceAll("\" />"          , "\"" + lineSeparator() + "/>")
+                  .replaceAll("\"/>"           , "\"" + lineSeparator() + "/>")
                   .replaceAll("\"fill_parent\"", "\"match_parent\"")
-                  .replaceAll("\"dip\"", "\"dp\"");
+                  .replaceAll("\"dip\""        , "\"dp\"");
+    }
+
+
+    static String repair(String xml) {
+        return xml.replaceAll("\"" + lineSeparator() + ">" , "\">" )
+                  .replaceAll("\"" + lineSeparator() + "/>", "\"/>" );
+        // @formatter:on
     }
 
 
@@ -135,7 +143,7 @@ class Formatter {
             result += line + lineSeparator();
         }
 
-        return result;
+        return repair(result);
     }
 
 

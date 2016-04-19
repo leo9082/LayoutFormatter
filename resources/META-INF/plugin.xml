@@ -1,7 +1,7 @@
 <idea-plugin version="2">
     <id>me.drakeet.layoutformatter</id>
     <name>LayoutFormatter</name>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <vendor email="drakeet.me@gmail.com" url="https://drakeet.me">drakeet</vendor>
 
     <description><![CDATA[
@@ -15,7 +15,10 @@
     ]]></description>
 
     <change-notes><![CDATA[
-      v1.0.2 Update the rules.
+      v1.0.3
+      Fix the bad style that ">" or "/>" may be moved to a newline;
+      Add "fill_parent" to "match_parent";
+      Add "dip" to "dp".
     ]]>
     </change-notes>
 

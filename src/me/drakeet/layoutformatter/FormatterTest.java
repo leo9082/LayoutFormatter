@@ -42,4 +42,30 @@ public class FormatterTest extends TestCase {
         assertEquals(xml5, "<XXX android:layout_height=\"match_parent\" " +
                 "string=\"fill_parent should be written to match_parent\"\n/>");
     }
+
+
+    public void testRepair() {
+        xml1 = Formatter.retrofit(xml1);
+        xml2 = Formatter.retrofit(xml2);
+        xml3 = Formatter.retrofit(xml3);
+        xml4 = Formatter.retrofit(xml4);
+        xml5 = Formatter.retrofit(xml5);
+
+        xml1 = Formatter.repair(xml1);
+        xml2 = Formatter.repair(xml2);
+        xml3 = Formatter.repair(xml3);
+        xml4 = Formatter.repair(xml4);
+        xml5 = Formatter.repair(xml5);
+        System.out.println(xml1);
+        System.out.println(xml2);
+        System.out.println(xml3);
+        System.out.println(xml4);
+        System.out.println(xml5);
+        assertEquals(xml1, "<Test android:text=\"123\"\nandroid:id=\"456\"/>");
+        assertEquals(xml2, "<Test android:text=\"123\"\nandroid:id=\"456\"/>");
+        assertEquals(xml3, "<Test android:text=\"123\"\nandroid:id=\"456\">");
+        assertEquals(xml4, "<Test android:text=\"123\"\nandroid:id=\"456\">");
+        assertEquals(xml5, "<XXX android:layout_height=\"match_parent\" " +
+                "string=\"fill_parent should be written to match_parent\"/>");
+    }
 }
