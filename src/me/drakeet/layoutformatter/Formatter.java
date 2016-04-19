@@ -100,7 +100,9 @@ class Formatter {
         return xml.replaceAll("\" >", "\"" + lineSeparator() + ">")
                   .replaceAll("\">", "\"" + lineSeparator() + ">")
                   .replaceAll("\" />", "\"" + lineSeparator() + "/>")
-                  .replaceAll("\"/>", "\"" + lineSeparator() + "/>");
+                  .replaceAll("\"/>", "\"" + lineSeparator() + "/>")
+                  .replaceAll("fill_parent", "match_parent")
+                  .replaceAll("dip", "dp");
     }
 
 
