@@ -29,4 +29,10 @@ Or you can download the jar file from [releases](https://github.com/drakeet/Layo
 
 ![](https://raw.githubusercontent.com/drakeet/LayoutFormatter/master/art/hu.png)
 
+### Changelog
+v1.0.4
+`Fix` the bad style that ">" or "/>" may be moved to a newline;
+`Add` "fill_parent" to "match_parent";
+`Add` "dip" to "dp".
+
 

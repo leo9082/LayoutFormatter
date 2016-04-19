@@ -15,10 +15,10 @@
     ]]></description>
 
     <change-notes><![CDATA[
-      v1.0.4
-      Fix the bad style that ">" or "/>" may be moved to a newline;
-      Add "fill_parent" to "match_parent";
-      Add "dip" to "dp".
+      v1.0.4<br>
+      Fix the bad style that ">" or "/>" may be moved to a newline;<br>
+      Add "fill_parent" to "match_parent";<br>
+      Add "dip" to "dp".<br>
     ]]>
     </change-notes>
 
