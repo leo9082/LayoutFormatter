@@ -98,18 +98,18 @@ class Formatter {
 
     static String retrofit(String xml) {
         // @formatter:off
-        return xml.replaceAll("\" >"           , "\"" + lineSeparator() + ">")
-                  .replaceAll("\">"            , "\"" + lineSeparator() + ">")
-                  .replaceAll("\" />"          , "\"" + lineSeparator() + "/>")
-                  .replaceAll("\"/>"           , "\"" + lineSeparator() + "/>")
-                  .replaceAll("\"fill_parent\"", "\"match_parent\"")
-                  .replaceAll("dip\""          , "dp\"");
+        return xml.replace("\" >"           , "\"" + lineSeparator() + ">")
+                  .replace("\">"            , "\"" + lineSeparator() + ">")
+                  .replace("\" />"          , "\"" + lineSeparator() + "/>")
+                  .replace("\"/>"           , "\"" + lineSeparator() + "/>")
+                  .replace("\"fill_parent\"", "\"match_parent\"")
+                  .replace("dip\""          , "dp\"");
     }
 
 
     static String repair(String xml) {
-        return xml.replaceAll("\"" + lineSeparator() + ">" , "\">" )
-                  .replaceAll("\"" + lineSeparator() + "/>", "\"/>" );
+        return xml.replace("\"" + lineSeparator() + ">" , "\">" )
+                  .replace("\"" + lineSeparator() + "/>", "\"/>" );
         // @formatter:on
     }
 
