@@ -50,4 +50,9 @@ This project is deprecated in favor of the Android Studio has the same and bette
 I still think this plugin is more useful, more powerful, and easier to use.
 
 
+### Issues
+
+- It does not support the Windows system temporarily(暂时不支持 Windows 系统).
+
+
 
