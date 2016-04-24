@@ -6,19 +6,19 @@
 
     <description><![CDATA[
       Retrofit your Android layout XML files.
-      <br><br>
+      <br/><br/>
       It will adjust your attributes order in accordance with the rules,
       and it will adjust some attributes to the front, and take some attributes at the end of the rows.
       It will make your code format more nice.
-      <br><br>
+      <br/><br/>
       It is open source. <a href="https://github.com/drakeet/LayoutFormatter">https://github.com/drakeet/LayoutFormatter</a>
     ]]></description>
 
     <change-notes><![CDATA[
-      v1.0.4<br>
-      Fix the bad style that ">" or "/>" may be moved to a newline;<br>
-      Add "fill_parent" to "match_parent";<br>
-      Add "dip" to "dp".<br>
+      v1.0.4<br/>
+      Fix the bad style that ">" or "/>" may be moved to a newline;<br/>
+      Add "fill_parent" to "match_parent";<br/>
+      Add "dip" to "dp".<br/>
     ]]>
     </change-notes>
 
@@ -37,13 +37,20 @@
 
     <!--<actions>-->
 
+    <!--<actions>-->
+        <!--<group id="DrakeetPlugin.LayoutFormatterAction" text="_Formatter" description="Formatter">-->
+            <!--<add-to-group group-id="MainMenu" anchor="last"/>-->
+            <!--<action id="DrakeetPlugin.Textboxes"-->
+                <!--class="me.drakeet.layoutformatter.LayoutFormatterAction" text="Layout _Formatter"-->
+                <!--description="Reformat your Android layout XML files."/>-->
+        <!--</group>-->
+    <!--</actions>-->
+
     <actions>
-        <group id="DrakeetPlugin.LayoutFormatterAction" text="_Formatter" description="Formatter">
-            <add-to-group group-id="MainMenu" anchor="last"/>
-            <action id="DrakeetPlugin.Textboxes"
-                class="me.drakeet.layoutformatter.LayoutFormatterAction" text="Layout _Formatter"
-                description="Reformat your Android layout XML files."/>
-        </group>
+        <action id="LayoutFormatter" class="me.drakeet.layoutformatter.LayoutFormatterAction" text="Reformat Layout XML" description="Reformat Layout XML">
+            <add-to-group group-id="RefactoringMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="meta L"/>
+        </action>
     </actions>
 
 </idea-plugin>
