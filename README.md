@@ -29,7 +29,7 @@ Or you could use the default keyboard-shortcut: `ctrl alt F` (`command alt F`).
 ### Changelog
 v1.1.0<br/>
 - Adjust the location of the Action to RefactoringMenu;<br/>
-- Support UNDO;<br/>
+- Support UNDO（ctrl/command + z);<br/>
 - Filter non XML file;<br/>
 - Support one key to format all files on the entire project or folder;<br/>
 - Add default keyboard-shortcut: ctrl alt F (command alt F).
