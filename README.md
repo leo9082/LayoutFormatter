@@ -10,11 +10,6 @@ It is open source. <a href="https://github.com/drakeet/LayoutFormatter">https://
 
 ![](http://ww4.sinaimg.cn/large/86e2ff85gw1f2t2d40we4j21ge0m5gz1.jpg)
 
-### Deprecated!
-
-This project is deprecated in favor of the Android Studio has the same and better XML formatter:  
-`Editor -> Code Style -> XML -> Arrangement`
-
 ### Obtaining
 
 The plugin is distributed through the Plugin Manager in IntelliJ. https://plugins.jetbrains.com/plugin/8299
@@ -39,10 +34,20 @@ v1.1.0<br/>
 - Support one key to format all files on the entire project or folder;<br/>
 - Add default keyboard-shortcut: ctrl alt F (command alt F).
 
-<br/><br/>
 v1.0.4<br/>
 - Fix the bad style that ">" or "/>" may be moved to a newline;<br/>
 - Add "fill_parent" to "match_parent";<br/>
 - Add "dip" to "dp".<br/>
+
+
+### Deprecated
+
+This project is deprecated in favor of the Android Studio has the same and better XML formatter:
+`Editor -> Code Style -> XML -> Arrangement`
+
+**However**
+
+I still think this plugin is more useful, more powerful, and more simple.
+
 
 
