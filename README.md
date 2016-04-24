@@ -25,17 +25,24 @@ Or you can download the jar file from [releases](https://github.com/drakeet/Layo
 
 `Preferences -> Plugin -> Install plugin from disk...`
 
-### How to use
+### Usage
 
-![](https://raw.githubusercontent.com/drakeet/LayoutFormatter/master/art/hu.png)
+`YourFiles -> PopupMenu(Right Click) -> Refactor -> Reformat Layout XML.`
+
+Or you could use the default keyboard-shortcut: `ctrl alt F` (`command alt F`).
 
 ### Changelog
-v1.0.4
+v1.1.0<br/>
+- Adjust the location of the Action to RefactoringMenu;<br/>
+- Support UNDO;<br/>
+- Filter non XML file;<br/>
+- Support one key to format all files on the entire project or folder;<br/>
+- Add default keyboard-shortcut: ctrl alt F (command alt F).
 
-`Fix` the bad style that ">" or "/>" may be moved to a newline;
-
-`Add` "fill_parent" to "match_parent";
-
-`Add` "dip" to "dp".
+<br/><br/>
+v1.0.4<br/>
+- Fix the bad style that ">" or "/>" may be moved to a newline;<br/>
+- Add "fill_parent" to "match_parent";<br/>
+- Add "dip" to "dp".<br/>
 
 
