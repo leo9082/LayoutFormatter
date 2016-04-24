@@ -7,11 +7,9 @@ import com.intellij.openapi.actionSystem.IdeActions;
 import com.intellij.openapi.actionSystem.LangDataKeys;
 import com.intellij.openapi.command.WriteCommandAction;
 import com.intellij.openapi.editor.Document;
-import com.intellij.openapi.editor.Editor;
+import com.intellij.openapi.fileEditor.FileDocumentManager;
 import com.intellij.openapi.project.Project;
-import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.vfs.VirtualFile;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * Created by drakeet on 16/4/8.
@@ -26,21 +24,32 @@ public class LayoutFormatterAction extends AnAction {
 
     public void actionPerformed(final AnActionEvent event) {
         final Project project = getEventProject(event);
-        Editor editor = event.getData(LangDataKeys.EDITOR);
-        if (editor != null) {
-            final Document document = editor.getDocument();
+        VirtualFile file = event.getData(LangDataKeys.VIRTUAL_FILE);
+        System.out.println("All formatted files:");
+        execute(project, file);
+        event.getActionManager()
+             .getAction(IdeActions.ACTION_EDITOR_REFORMAT)
+             .actionPerformed(event);
+    }
+
+
+    private void execute(Project project, final VirtualFile file) {
+        VirtualFile[] files = file.getChildren();
+        if (files.length > 0) {
+            for (VirtualFile _file : files) {
+                if (Files.isXmlFileOrDir(_file)) {
+                    execute(project, _file);
+                }
+            }
+        } else {
+            System.out.println(file.getPath());
+            final Document document = FileDocumentManager.getInstance().getDocument(file);
             new WriteCommandAction.Simple(project) {
                 @Override protected void run() throws Throwable {
                     String txt = document.getText();
                     document.setText(Formatter.apply(txt));
-                    event.getActionManager()
-                         .getAction(IdeActions.ACTION_EDITOR_REFORMAT)
-                         .actionPerformed(event);
                 }
             }.execute();
-        } else {
-            Messages.showMessageDialog(project, "Please focus in your editor and try again.",
-                    "Error", null);
         }
     }
 
@@ -48,11 +57,6 @@ public class LayoutFormatterAction extends AnAction {
     @Override public void update(AnActionEvent event) {
         super.update(event);
         final VirtualFile file = CommonDataKeys.VIRTUAL_FILE.getData(event.getDataContext());
-        event.getPresentation().setVisible(isXmlFile(file));
-    }
-
-
-    private static boolean isXmlFile(@Nullable VirtualFile file) {
-        return file != null && file.getName().endsWith(".xml");
+        event.getPresentation().setVisible(Files.isXmlFileOrDir(file));
     }
 }

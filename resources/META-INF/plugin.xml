@@ -1,7 +1,7 @@
-<idea-plugin version="2">
+<idea-plugin version="10">
     <id>me.drakeet.layoutformatter</id>
     <name>LayoutFormatter</name>
-    <version>1.0.4</version>
+    <version>1.1.0</version>
     <vendor email="drakeet.me@gmail.com" url="https://drakeet.me">drakeet</vendor>
 
     <description><![CDATA[
@@ -15,14 +15,21 @@
     ]]></description>
 
     <change-notes><![CDATA[
+      v1.1.0<br/>
+      - Adjust the location of the Action to RefactoringMenu;<br/>
+      - Support UNDO;<br/>
+      - Filter non XML file;<br/>
+      - Support one key to format all files on the entire project or folder;<br/>
+      - Add default keyboard-shortcut: ctrl alt F (command alt F).
+
+      <br/><br/>
       v1.0.4<br/>
-      Fix the bad style that ">" or "/>" may be moved to a newline;<br/>
-      Add "fill_parent" to "match_parent";<br/>
-      Add "dip" to "dp".<br/>
+      - Fix the bad style that ">" or "/>" may be moved to a newline;<br/>
+      - Add "fill_parent" to "match_parent";<br/>
+      - Add "dip" to "dp".<br/>
     ]]>
     </change-notes>
 
-    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
     <idea-version since-build="131"/>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
@@ -35,21 +42,11 @@
         <defaultProjectTypeProvider type="Android"/>
     </extensions>
 
-    <!--<actions>-->
-
-    <!--<actions>-->
-        <!--<group id="DrakeetPlugin.LayoutFormatterAction" text="_Formatter" description="Formatter">-->
-            <!--<add-to-group group-id="MainMenu" anchor="last"/>-->
-            <!--<action id="DrakeetPlugin.Textboxes"-->
-                <!--class="me.drakeet.layoutformatter.LayoutFormatterAction" text="Layout _Formatter"-->
-                <!--description="Reformat your Android layout XML files."/>-->
-        <!--</group>-->
-    <!--</actions>-->
-
     <actions>
-        <action id="LayoutFormatter" class="me.drakeet.layoutformatter.LayoutFormatterAction" text="Reformat Layout XML" description="Reformat Layout XML">
+        <action id="LayoutFormatter" class="me.drakeet.layoutformatter.LayoutFormatterAction"
+            text="Reformat Layout XML" description="Reformat Layout XML">
             <add-to-group group-id="RefactoringMenu" anchor="first"/>
-            <keyboard-shortcut keymap="$default" first-keystroke="meta L"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt F"/>
         </action>
     </actions>
 

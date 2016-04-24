@@ -139,7 +139,6 @@ class Formatter {
         }
         String result = "";
         for (String line : attrs) {
-            System.out.println(line);
             result += line + lineSeparator();
         }
 
