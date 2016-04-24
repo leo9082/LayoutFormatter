@@ -47,7 +47,7 @@ This project is deprecated in favor of the Android Studio has the same and bette
 
 **However**
 
-I still think this plugin is more useful, more powerful, and easier to use.
+I still think this plugin is more powerful, and easier to use.
 
 
 ### Issues
