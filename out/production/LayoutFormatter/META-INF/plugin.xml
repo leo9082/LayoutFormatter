@@ -1,7 +1,7 @@
-<idea-plugin version="10">
+<idea-plugin version="11">
     <id>me.drakeet.layoutformatter</id>
     <name>LayoutFormatter</name>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
     <vendor email="drakeet.me@gmail.com" url="https://drakeet.me">drakeet</vendor>
 
     <description><![CDATA[
@@ -15,7 +15,7 @@
     ]]></description>
 
     <change-notes><![CDATA[
-      v1.1.0<br/>
+      v1.1.1<br/>
       - Adjust the location of the Action to RefactoringMenu;<br/>
       - Support UNDO;<br/>
       - Filter non XML file;<br/>
@@ -34,9 +34,9 @@
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
-    <!-- uncomment to enable plugin in all products
+
     <depends>com.intellij.modules.lang</depends>
-    -->
+    <depends>org.jetbrains.android</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <defaultProjectTypeProvider type="Android"/>

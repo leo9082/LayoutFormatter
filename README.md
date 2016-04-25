@@ -16,9 +16,14 @@ The plugin is distributed through the Plugin Manager in IntelliJ. https://plugin
 
 Or you can download the jar file from [releases](https://github.com/drakeet/LayoutFormatter/releases).
 
-### Install
+### Installation
 
-`Preferences -> Plugin -> Install plugin from disk...`
+Search word `LayoutFormatter`: On Mac: `Preference -> Plugins -> Browse repositories`
+
+Or
+
+Download `LayoutFormatter.jar` manually, then `Preferences -> Plugin -> Install plugin from disk...`
+
 
 ### Usage
 
