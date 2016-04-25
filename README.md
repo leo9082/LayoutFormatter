@@ -35,9 +35,9 @@ v1.1.1<br/>
 - Add default keyboard-shortcut: ctrl alt F (command alt F).
 
 v1.0.4<br/>
-- Fix the bad style that ">" or "/>" may be moved to a newline;<br/>
-- Add "fill_parent" to "match_parent";<br/>
-- Add "dip" to "dp".<br/>
+- Fix the bad style that `>` or `/>` may be moved to a newline;<br/>
+- Add `fill_parent` to `match_parent`;<br/>
+- Add `dip` to `dp`.<br/>
 
 
 ### Deprecated
