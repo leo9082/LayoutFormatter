@@ -181,6 +181,6 @@ class Formatter {
 
 
     private static String lineSeparator() {
-        return System.getProperty("line.separator");
+        return "\n";
     }
 }
