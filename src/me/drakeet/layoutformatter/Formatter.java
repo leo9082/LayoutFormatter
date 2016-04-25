@@ -38,6 +38,7 @@ class Formatter {
         sRule.put("style", getNextPriority());
         sRule.put(android("id"), getNextPriority());
         sRule.put(android("visibility"), getNextPriority());
+        sRule.put(tools("visibility"), getNextPriority());
         sRule.put(android("layout_width"), getNextPriority());
         sRule.put(android("layout_height"), getNextPriority());
         sRule.put(android("layout_weight"), getNextPriority());

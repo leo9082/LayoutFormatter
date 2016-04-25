@@ -27,7 +27,7 @@ Or you can download the jar file from [releases](https://github.com/drakeet/Layo
 Or you could use the default keyboard-shortcut: `ctrl alt F` (`command alt F`).
 
 ### Changelog
-v1.1.0<br/>
+v1.1.1<br/>
 - Adjust the location of the Action to RefactoringMenu;<br/>
 - Support UNDO（ctrl/command + z);<br/>
 - Filter non XML file;<br/>
