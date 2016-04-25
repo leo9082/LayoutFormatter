@@ -53,6 +53,7 @@ I still think this plugin is more powerful, and easier to use.
 ### Issues
 
 - It does not support the Windows system temporarily(暂时不支持 Windows 系统).
+- 相关文章: [当我们谈 XML 布局文件代码的优雅性](https://drakeet.me/layoutformatter)
 
 
 
