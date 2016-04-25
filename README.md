@@ -10,19 +10,16 @@ It is open source. <a href="https://github.com/drakeet/LayoutFormatter">https://
 
 ![](http://ww4.sinaimg.cn/large/86e2ff85gw1f2t2d40we4j21ge0m5gz1.jpg)
 
-### Obtaining
+### Obtaining & Installation
 
 The plugin is distributed through the Plugin Manager in IntelliJ. https://plugins.jetbrains.com/plugin/8299
 
-Or you can download the jar file from [releases](https://github.com/drakeet/LayoutFormatter/releases).
-
-### Installation
-
 Search word `LayoutFormatter`: On Mac: `Preference -> Plugins -> Browse repositories`
 
-Or
+The plugin is distributed through the Plugin Manager in IntelliJ. https://plugins.jetbrains.com/plugin/8299
 
-Download `LayoutFormatter.jar` manually, then `Preferences -> Plugin -> Install plugin from disk...`
+Or you can download the jar file from [LayoutFormatter.jar](https://github.com/drakeet/LayoutFormatter/releases),
+then `Preferences -> Plugin -> Install plugin from disk...`
 
 
 ### Usage
