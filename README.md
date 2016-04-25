@@ -42,7 +42,7 @@ v1.0.4<br/>
 
 ### Deprecated
 
-This project is deprecated in favor of the Android Studio has the same and better XML formatter:
+This project is deprecated in favor of the Android Studio has the same XML formatter:
 `Editor -> Code Style -> XML -> Arrangement`
 
 **However**
