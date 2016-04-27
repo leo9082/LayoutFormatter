@@ -6,7 +6,7 @@ It will adjust your attributes order in accordance with the rules,
 and it will adjust some attributes to the front, and take some attributes at the end of the rows.
 It will make your code format more nice.
 
-Related articles: <a href="https://drakeet.me/layoutformatter">当我们谈 XML 布局文件代码的优雅性</a>
+Related articles: [《当我们谈 XML 布局文件代码的优雅性》](https://drakeet.me/layoutformatter)
 
 ![](http://ww4.sinaimg.cn/large/86e2ff85gw1f2t2d40we4j21ge0m5gz1.jpg)
 
@@ -55,8 +55,6 @@ I still think this plugin is more powerful, and easier to use.
 
 
 ### Issues
-
-- 相关文章: [《当我们谈 XML 布局文件代码的优雅性》](https://drakeet.me/layoutformatter)
 
 
 
