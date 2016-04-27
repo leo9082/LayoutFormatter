@@ -27,6 +27,11 @@ public class LayoutFormatterAction extends AnAction {
         VirtualFile file = event.getData(LangDataKeys.VIRTUAL_FILE);
         System.out.println("All formatted files:");
         execute(project, file);
+        systemReformat(event);
+    }
+
+
+    private void systemReformat(final AnActionEvent event) {
         event.getActionManager()
              .getAction(IdeActions.ACTION_EDITOR_REFORMAT)
              .actionPerformed(event);

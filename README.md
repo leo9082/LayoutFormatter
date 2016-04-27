@@ -27,6 +27,10 @@ then `Preferences -> Plugin -> Install plugin from disk...`
 Or you could use the default keyboard-shortcut: `ctrl alt F` (`command alt F`).
 
 ### Changelog
+v1.1.2<br/>
+- Support Windows system;<br/>
+- Fix the "/><" bug.
+
 v1.1.1<br/>
 - Adjust the location of the Action to RefactoringMenu;<br/>
 - Support UNDO（ctrl/command + z);<br/>

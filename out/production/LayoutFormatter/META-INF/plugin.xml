@@ -1,7 +1,7 @@
 <idea-plugin version="11">
     <id>me.drakeet.layoutformatter</id>
     <name>LayoutFormatter</name>
-    <version>1.1.1</version>
+    <version>1.1.2</version>
     <vendor email="drakeet.me@gmail.com" url="https://drakeet.me">drakeet</vendor>
 
     <description><![CDATA[
@@ -11,10 +11,16 @@
       and it will adjust some attributes to the front, and take some attributes at the end of the rows.
       It will make your code format more nice.
       <br/><br/>
-      It is open source. <a href="https://github.com/drakeet/LayoutFormatter">https://github.com/drakeet/LayoutFormatter</a>
+      It is open source. <a href="https://github.com/drakeet/LayoutFormatter">https://github.com/drakeet/LayoutFormatter</a><br/>
+      Related articles: <a href="https://drakeet.me/layoutformatter">当我们谈 XML 布局文件代码的优雅性</a>
     ]]></description>
 
     <change-notes><![CDATA[
+      v1.1.2<br/>
+      - Support Windows system;<br/>
+      - Fix the "/><" bug.
+
+      <br/><br/>
       v1.1.1<br/>
       - Adjust the location of the Action to RefactoringMenu;<br/>
       - Support UNDO;<br/>

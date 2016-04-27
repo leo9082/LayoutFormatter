@@ -103,6 +103,7 @@ class Formatter {
                   .replace("\">"            , "\"" + lineSeparator() + ">")
                   .replace("\" />"          , "\"" + lineSeparator() + "/>")
                   .replace("\"/>"           , "\"" + lineSeparator() + "/>")
+                  .replace("/><"            , "/>" + lineSeparator() + "<")
                   .replace("\"fill_parent\"", "\"match_parent\"")
                   .replace("dip\""          , "dp\"");
     }
@@ -132,7 +133,7 @@ class Formatter {
             } else if (attr.endsWith(">")) {
                 if (!skip) {
                     end = i;
-                    reformat(attrs, start + 1, end);
+                    resort(attrs, start + 1, end);
                 } else {
                     skip = false;
                 }
@@ -147,7 +148,7 @@ class Formatter {
     }
 
 
-    private static void reformat(List<String> lines, int start, int end) {
+    private static void resort(List<String> lines, int start, int end) {
         if (start >= lines.size() || start > end || end >= lines.size()) {
             return;
         }
