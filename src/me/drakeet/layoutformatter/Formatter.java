@@ -36,13 +36,34 @@ class Formatter {
         sRule.put("xmlns:app", getNextPriority());
         sRule.put("xmlns:tools", getNextPriority());
         sRule.put("style", getNextPriority());
+        sRule.put("theme", getNextPriority());
         sRule.put(android("id"), getNextPriority());
+        sRule.put(android("tag"), getNextPriority());
         sRule.put(android("visibility"), getNextPriority());
         sRule.put(tools("visibility"), getNextPriority());
         sRule.put(android("layout_width"), getNextPriority());
         sRule.put(android("layout_height"), getNextPriority());
         sRule.put(android("layout_weight"), getNextPriority());
         sRule.put(android("layout_gravity"), getNextPriority());
+
+        sRule.put(android("layout_above"), getNextPriority());
+        sRule.put(android("layout_below"), getNextPriority());
+        sRule.put(android("layout_toLeftOf"), getNextPriority());
+        sRule.put(android("layout_toStartOf"), getNextPriority());
+        sRule.put(android("layout_toRightOf"), getNextPriority());
+        sRule.put(android("layout_toEndOf"), getNextPriority());
+        sRule.put(android("layout_alignStart"), getNextPriority());
+        sRule.put(android("layout_alignRight"), getNextPriority());
+        sRule.put(android("layout_alignTop"), getNextPriority());
+        sRule.put(android("layout_alignBottom"), getNextPriority());
+        sRule.put(android("layout_alignParentStart"), getNextPriority());
+        sRule.put(android("layout_alignParentRight"), getNextPriority());
+        sRule.put(android("layout_alignParentTop"), getNextPriority());
+        sRule.put(android("layout_alignParentBottom"), getNextPriority());
+        sRule.put(android("layout_centerInParent"), getNextPriority());
+        sRule.put(android("layout_centerVertical"), getNextPriority());
+        sRule.put(android("layout_centerHorizontal"), getNextPriority());
+
         sRule.put(android("layout_margin"), getNextPriority());
         sRule.put(android("layout_marginLeft"), getNextPriority());
         sRule.put(android("layout_marginStart"), getPriority());
@@ -59,6 +80,7 @@ class Formatter {
         sRule.put(android("paddingTop"), getNextPriority());
         sRule.put(android("paddingBottom"), getNextPriority());
 
+        sRule.put(android("layoutAnimation"), getNextPriority());
         sRule.put(android("orientation"), getNextPriority());
         sRule.put(android("gravity"), getNextPriority());
         sRule.put(android("minHeight"), getNextPriority());
