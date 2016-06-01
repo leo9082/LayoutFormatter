@@ -27,8 +27,8 @@ then `Preferences -> Plugin -> Install plugin from disk...`
 Or you could use the default keyboard-shortcut: `ctrl alt F` (`command alt F`).
 
 ### Changelog
-v1.1.3<br/>
-- Add more rules, up to 70.
+v1.1.4<br/>
+- Added a rule: `android:singleLine="true"`(It's deprecated) -> `android:maxLines="1"`;<br/>
 
 v1.1.2<br/>
 - Support Windows system;<br/>

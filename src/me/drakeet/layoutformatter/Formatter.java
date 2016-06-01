@@ -121,13 +121,14 @@ class Formatter {
 
     static String retrofit(String xml) {
         // @formatter:off
-        return xml.replace("\" >"           , "\"" + lineSeparator() + ">")
-                  .replace("\">"            , "\"" + lineSeparator() + ">")
-                  .replace("\" />"          , "\"" + lineSeparator() + "/>")
-                  .replace("\"/>"           , "\"" + lineSeparator() + "/>")
-                  .replace("/><"            , "/>" + lineSeparator() + "<")
-                  .replace("\"fill_parent\"", "\"match_parent\"")
-                  .replace("dip\""          , "dp\"");
+        return xml.replace("\" >"               , "\"" + lineSeparator() + ">")
+                  .replace("\">"                , "\"" + lineSeparator() + ">")
+                  .replace("\" />"              , "\"" + lineSeparator() + "/>")
+                  .replace("\"/>"               , "\"" + lineSeparator() + "/>")
+                  .replace("/><"                , "/>" + lineSeparator() + "<")
+                  .replace("singleLine=\"true\"", "maxLines=\"1\"")
+                  .replace("\"fill_parent\""    , "\"match_parent\"")
+                  .replace("dip\""              , "dp\"");
     }
 
 
