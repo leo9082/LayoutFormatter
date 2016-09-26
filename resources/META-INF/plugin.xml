@@ -1,7 +1,7 @@
-<idea-plugin version="11">
+<idea-plugin version="12">
     <id>me.drakeet.layoutformatter</id>
     <name>LayoutFormatter</name>
-    <version>1.1.4</version>
+    <version>1.1.5</version>
     <vendor email="drakeet.me@gmail.com" url="https://drakeet.me">drakeet</vendor>
 
     <description><![CDATA[
@@ -16,8 +16,8 @@
     ]]></description>
 
     <change-notes><![CDATA[
-      v1.1.4<br/>
-      - Added a rule: android:singleLine="true"(It's deprecated) -> android:maxLines="1";<br/>
+      v1.1.5<br/>
+      - Removed a rule: android:singleLine="true"(It's deprecated) -> android:maxLines="1"(It's DEPRECATED, too!);<br/>
 
       <br/><br/>
       v1.1.2<br/>

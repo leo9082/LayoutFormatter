@@ -49,7 +49,6 @@ public class FormatterTest extends TestCase {
         assertEquals(xml4, "<Test android:text=\"123\"\nandroid:id=\"456\"\n>");
         assertEquals(xml5, "<XXX android:layout_height=\"match_parent\" " +
                 "string=\"fill_parent should be written to match_parent\"\n/>");
-        assertEquals(Formatter.retrofit("android:singleLine=\"true\""), "android:maxLines=\"1\"");
     }
 
 

@@ -126,7 +126,6 @@ class Formatter {
                   .replace("\" />"              , "\"" + lineSeparator() + "/>")
                   .replace("\"/>"               , "\"" + lineSeparator() + "/>")
                   .replace("/><"                , "/>" + lineSeparator() + "<")
-                  .replace("singleLine=\"true\"", "maxLines=\"1\"")
                   .replace("\"fill_parent\""    , "\"match_parent\"")
                   .replace("dip\""              , "dp\"");
     }
