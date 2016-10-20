@@ -12,11 +12,11 @@ Related article: [《当我们谈 XML 布局文件代码的优雅性》](https:/
 
 ### Obtaining & Installation
 
-The plugin is distributed through the Plugin Manager in IntelliJ. https://plugins.jetbrains.com/plugin/8299
+- The plugin is distributed through the Plugin Manager in IntelliJ. https://plugins.jetbrains.com/plugin/8299
 
-Search word `LayoutFormatter`: On Mac: `Preference -> Plugins -> Browse repositories`
+- Search word `LayoutFormatter`: On Mac: `Preference -> Plugins -> Browse repositories`
 
-Or you can download the jar file from [LayoutFormatter.jar](https://github.com/drakeet/LayoutFormatter/releases),
+- Or you can download the jar file from [LayoutFormatter.jar](https://github.com/drakeet/LayoutFormatter/releases),
 then `Preferences -> Plugin -> Install plugin from disk...`
 
 
