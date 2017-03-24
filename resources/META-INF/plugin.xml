@@ -1,0 +1,40 @@
+<idea-plugin version="2">
+  <id>com.your.company.unique.plugin.id</id>
+  <name>Plugin display name here</name>
+  <version>1.0</version>
+  <vendor email="support@yourcompany.com" url="http://www.xlbyun.com">modify-by—fly</vendor>
+
+  <description><![CDATA[
+     source https://github.com/drakeet/LayoutFormatter
+     Thank drakeet
+     <br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="145.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <defaultProjectTypeProvider type="Android"/>
+  </extensions>
+
+  <actions>
+    <action id="LayoutFormatter" class="me.drakeet.layoutformatter.LayoutFormatterAction"
+            text="Reformat Layout XML" description="Reformat Layout XML">
+      <add-to-group group-id="RefactoringMenu" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt F"/>
+    </action>
+  </actions>
+</idea-plugin>
